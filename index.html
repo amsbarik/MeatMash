@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <title>Home | MeatMash</title>
+</head>
+<body>
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary py-3 navbar-expand-lg  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/logo.svg" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-center  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link " href="menu.html">MENU</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">EN</a></li>
+              <!-- <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li> -->
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="menu.html"><i class="fa-solid fa-mug-hot"></i><span class="d-block">Menu</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="about.html"><i class="fa-solid fa-eject"></i><span class="d-block">About</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="contact.html"><i class="fa-solid fa-address-card"></i><span class="d-block">Contact</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main>
+    <!-- Hero Area start  -->
+    <section class="hero-area" style="margin-top: 80px;" >
+      <div class="container ">
+        <div class="hero-wrap" >
+          <div class="row" style="height: 953px;">
+            <div class="col d-flex align-items-center" style="height: 100%;">
+              <div class="card hero-txt border-0" style="width: 82%; margin-left: -40px;">
+                <img src="img/Illustration.svg" class="card-img" alt="...">
+                <div class="card-img-overlay" style="margin-top: 110px; margin-left: 40px;">
+                  <h3 class="card-title text-uppercase">WELCOME TO</h3>
+                  <h1 class="text-uppercase heading-style">MeatMash</h1>
+                  <p class="card-text">Savor our delectable dishes and immerse yourself in an
+                    unforgettable dining experience like no other.</p>
+                  
+                </div>
+              </div>
+
+              
+            </div>
+            <div class="col hero-img">
+              <img src="/img/main.jpeg" class="hero-main-img" alt="">
+              <img src="/img/kabab.png" class="hero-img1" alt="">
+              <img src="/img/berger.png" class="hero-img2" alt="">
+              <div class="menu-btn d-flex justify-content-center align-items-center">
+                <div>
+                  <p class="text-center fs-3">OUR</p>
+                  <h2 class="text-center fw-bold">MENU</h2></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Area end -->
+
+    <!-- our menu start  -->
+    <section class="our-menu py-5">
+      <div class="container">
+        <div class="menu-wrap">
+          <h1 class="heading-style text-center">our menu</h1>
+          <div class="row mt-5 g-5">
+            <div class="col">
+              <div class="card border-0" >
+                <img src="img/Burger-Image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title title-style text-uppercase text-center">Smashed</h5>
+                  <h2 class="title-style text-uppercase text-center">Burger</h2>
+                  <div class="text-center"><a href="#" class="btn text-uppercase text-center ">Details</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" >
+                <img src="img/Kebab-Photo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title title-style text-uppercase text-center">Smashed</h5>
+                  <h2 class="title-style text-uppercase text-center">Burger</h2>
+                  <div class="text-center"><a href="#" class="btn text-uppercase text-center ">Details</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" >
+                <img src="img/Tacos-Image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title title-style text-uppercase text-center">Smashed</h5>
+                  <h2 class="title-style text-uppercase text-center">Burger</h2>
+                  <div class="text-center"><a href="#" class="btn text-uppercase text-center ">Details</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- our menu end -->
+
+    <!-- about us start  -->
+    <section class="about-us py-5">
+      <div class="container">
+        <div class="about-wrap">
+          <h1 class="heading-style text-uppercase text-white text-center">about us</h1>
+          <div class="row mt-5">
+            <div class="col">
+              <div class=" about-txt" >
+                <h3>IN THE KITCHEN: CRAFTING</h3>
+                <h2>KEBABS, BURGERS & TACOS WITH PASSION</h2>
+                <p>We make a small, intimate, and inviting space for an unforgettable meal</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="about-img">
+                <img src="img/about-us-lower.png" class="about-img-lower" alt="...">
+                <img src="img/about-us-upper.png" class="about-img-upper" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us end -->
+
+    <!-- contact us start -->
+    <section class="contact-us pt-5">
+      <div class="container">
+        <div class="contact-wrap">
+          <h1 class="heading-style text-center text-uppercase">contact us</h1>
+          <p class="text-uppercase text-center">IF YOU HAVE ANY QUESTIONS OR CONCERNS, YOU CAN CONTACT US IN THE FOLLOWING WAYS</p>
+          <div class="row">
+            <div class="col">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="img/call.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h3 class="card-title title-style text-uppercase text-center">Contact us</h3>
+                  <a href="tel:+420 000 000 000" class="link d-block text-center">Phone: +420 000 000 000</a>
+                  <a href="mailto:meatmash@gmail.com" class="link d-block text-center"> Email: meatmash@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="img/address.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h3 class="card-title title-style text-uppercase text-center">Address</h3>
+                  <a class="link d-block text-center">Dlážděná 4, 110 00 Nové Město Dlážděná 4, 110 00 Nové Město</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="img/clock.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h3 class="card-title title-style text-uppercase text-center">open time</h3>
+                  <a class="link d-block text-center">Mon - Fri: 9:00 am - 22:00 pm <br>
+                    <span>Sat - Sun: 11:00 am - 20:00 pm</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/map.png" class="mt-5 object-fit-cover " height="611px" alt="">
+    </section>
+    <!-- contact us end -->
+
+    <!-- review start  -->
+    <section class="review">
+      <div class="container">
+        <div class="review-wrap">
+          <div id="review-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item pt-5 active">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <img src="img/rev-com.png" class="mt-5 d-block m-auto" alt="">
+                <h5 class="mt-4 text-center">Good restaurant, delicious food, classy atomsphere</h5>
+                <p class="mt-4 text-center">Please thank your team for their professional, efficient and friendly service on Sat night. The chefs smashed it and the drinks flowed freely! Everyone was impressed and were quite taken with how cost effective it was to have Ochre do what you did.</p>
+                <div class="reviews mt-4 text-center"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <h5 class="mt-4 text-center">Soňa Martynková</h5>
+              </div>
+
+              <div class="carousel-item pt-5 active">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <img src="img/rev-com.png" class="mt-5 d-block m-auto" alt="">
+                <h5 class="mt-4 text-center">Good restaurant, delicious food, classy atomsphere</h5>
+                <p class="mt-4 text-center">Please thank your team for their professional, efficient and friendly service on Sat night. The chefs smashed it and the drinks flowed freely! Everyone was impressed and were quite taken with how cost effective it was to have Ochre do what you did.</p>
+                <div class="reviews mt-4 text-center"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <h5 class="mt-4 text-center">Soňa Martynková</h5>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review end -->
+
+    <!-- footer start  -->
+    <footer class="footer pb-3 mt-4">
+      <div class="container">
+        <div class="footer-wrap pt-5">
+          <div class="row pb-5">
+            <div class="col">
+              <h2 class="text-uppercase">we are here</h2>
+              <a class="link d-block mt-4">Dlážděná 4, 110 00 Nové Město Dlážděná</a>
+              <a href="tel:+420 000 000 000" class="link d-block ">+420 000 000 000</a>
+              <a href="mailto:meatmash@gmail.com" class="link d-block ">meatmash@gmail.com</a>
+            </div>
+            <div class="col">
+              <img src="img/Logo.svg" class="d-block m-auto pb-4" alt="">
+              <a class="link d-block text-center ">MeatMash: Comfortable, high-quality haven. Authentic kebabs, burgers, tacos flawlessly crafted for your enjoyment.</a>
+            </div>
+            <div class="col ">
+              <h2 class="text-uppercase text-end">get in touch</h2>
+              <div class="text-end">
+                <a href="#" class="link me-3  mt-4"><i class="fa-brands social fa-facebook"></i></a>
+                <a href="#" class="link text-end"><i class="fa-brands social fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <small class="d-block copyright text-center ">Copyright 2024 @ MeatMash All Rights Reseved</small>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+    
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+    <script>
+      $('.trend-course-slide').slick({
+        infinite: true,
+    slidesToShow: 3,
+    centerPadding: '20px',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerPadding: '20px',
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      });
+    </script>
+       
+</body>
+</html>
