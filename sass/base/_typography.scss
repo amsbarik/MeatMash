@@ -12,7 +12,7 @@
     src: url(/fonts/VisbyRegular.woff);
  }
  @font-face {
-    font-family: Visby CF;
+    font-family: Visby CF bld;
     src: url(/fonts/VisbyBold.woff);
  }
  @font-face {
@@ -20,12 +20,18 @@
     src: url(/fonts/VisbyHeavy.woff);
  }
 
+ @font-face {
+    font-family: Visby CF MD;
+    src: url(/fonts/VisbyMedium.woff);
+ }
+
 //font family
 // $primary-font : 'Poppins', sans-serif;
 // $secondary-font : 'Dancing Script', cursive;
 $primary-font : Rodetta Stamp;
-$secondary-font : Visby CF;
+$secondary-font : Visby CF MD;
 $tertiary-font : Visby CF Regular;
+$bold-font: Visby CF bld;
 $heavy-font: Visby CF Heavy;
 
 
@@ -34,6 +40,8 @@ body{
     h1{font-family: $primary-font;}
     h2{font-family: $heavy-font;}
     p{font-family: $tertiary-font; }
+    h3,h4,h5,h6{font-family: $bold-font;}
+
 }
 
 // fonts sizes
@@ -60,31 +68,31 @@ $font-black: 900;
 // media
 @media (max-width: 768px){
     h1{
-        font-size: 110% !important;
+        font-size: 110% ;
     }
     h2{
-        font-size: 95% !important;
+        font-size: 95% ;
     }
     h3{
-        font-size: 90% !important;
+        font-size: 90% ;
     }
     h4{
-        font-size: 85% !important;
+        font-size: 85% ;
     }
     h5{
-        font-size: 85% !important;
+        font-size: 85% ;
     }
     h6{
-        font-size: 80% !important;
+        font-size: 80% ;
     }
     p{
-        font-size: .75rem !important;
+        font-size: .75rem ;
     }
     li, input, button, select, span, a, textarea{
-        font-size: .8rem !important;
+        font-size: .8rem ;
     }
     small{
-        font-size: .7rem !important;
+        font-size: .7rem ;
     }
 }
 

@@ -5,13 +5,24 @@
 // new classes
 .heading-style{
     color: $primary-color;
-    font-size: 87px;
+    font-size: 68px;
     font-family: $primary-font;
+}
+
+@media (max-width: 1200px){
+    .heading-style{
+        font-size: 50px;
+    }
+}
+@media (max-width: 992px){
+    .heading-style{
+        font-size: 35px;
+    }
 }
 
 .title-style{
     color: $secondary-color;
-    // font-family: $secondary-font;
+    font-family: $bold-font;
 
 }
 
@@ -36,7 +47,7 @@
     font-family: $tertiary-font;
     padding: 5px 20px 5px 20px;
     font-weight: 700;
-    // font-size: 25px;
+    font-size: 15px;
 }
 
 .btn-outline{
@@ -90,13 +101,6 @@
 }
 
 
-
-
-.likes{ 
-    color: $text-color;
-    color: $primary-color;
-    padding-right: $padding-min-extra
-    }
 .reviews{
     i{margin-right: 8px;}
     color: $tertiary-color;

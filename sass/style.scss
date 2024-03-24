@@ -19,6 +19,11 @@
             border: 1px solid $primary-color;
           }
         }
+
+        .nav-link{
+          color: $secondary-color;
+          &:hover{color: $primary-color;}
+        }
         
     }
 }
@@ -105,38 +110,40 @@
 
 // Hero area css start
 .hero-area{
-  
+  .row{height: 768px ;
   .hero-txt{
     h1{
-      margin-top: -25px !important;
+      margin-top: -14px !important;
+      font-size: 88px;
     }
-    p{margin-top: -20px !important;}
+    p{font-size: 22px; font-weight: 400;}
   
   }
   .hero-img{
     position: relative;
     .hero-main-img{
-      width: 600px;
-      height: 852px;
+      width: 492px;
+      height: 672px;
+      margin-top: 50px;
       border-top-left-radius: 100px;
-      border-bottom-right-radius: 100px;
+      border-bottom-right-radius: 140px;
       object-fit: cover;
 
     }
     .hero-img1{
       position: absolute;
-      top: 11%;
-      right: -16%;
-      width: 420px;
-      height: 420px;
+      top: 7%;
+      right: -10%;
+      width: 362px;
+      height: 362px;
       object-fit: cover;
       padding: 20px;
 
     }
     .hero-img2{
       position: absolute;
-      bottom: 11%;
-      left: -38%;
+      bottom: 5%;
+      left: -20%;
       width: 420px;
       height: 420px;
       object-fit: cover;
@@ -144,30 +151,36 @@
     }
     .menu-btn{
       position: absolute;
-      bottom: 17%;
-      right: -10%;
-      width: 240px;
-      height: 240px;
+      bottom: 14%;
+      right: -2%;
+      width: 192px;
+      height: 192px;
       background-color: $primary-color;
-      border-top-right-radius: 100px;
-      border-bottom-left-radius: 100px;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
       color: $tertiary-color ;
     }
   }
-}
+  
+}}
 // Hero area css end
 
 //our menu css start
 .our-menu{
-  background-image: url(/img/our-menu-bg.svg);
+  background-image: url(../img/our-menu-bg.svg);
   .menu-wrap{
     .card{
       background: none;
-      h2{
-        margin-top: -16px;
-        font-size: 80px;
+      img{padding: 54px;}
+      .card-body{
+        margin-top: -36px;
+        h5{font-size: 22px;}
+        h2{
+          margin-top: -6px;
+          font-size: 56px;
+        }
+        .btn{margin-top: 10px;}
       }
-      .btn{margin-top: -10px !important; }
     }
   }
 }
@@ -175,22 +188,22 @@
 
 //about us css start
 .about-us{
-  height: 1102px;
+  height: 868px;
   background-color: $primary-color;
-  background-image: url(/img/about-us-bg.png);
+  background-image: url(../img/about-us-bg.png);
   color: $tertiary-color;
   .about-wrap{
     .about-txt{
-      margin-top: 300px;
-      h2{font-size: 50px; font-weight: 400; line-height: 1;}
+      margin-top: 180px;
+      h2{font-size: 50px; font-weight: 400; }
       h3{font-size: 27px; font-weight: 700;}
       p{font-size: 22px; font-weight: 500;}
     }
     .about-img{
       position: relative;
       .about-img-lower{
-        width: 519px;
-        height: 594px;
+        width: 432px;
+        height: 520px;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -199,10 +212,10 @@
         border-bottom-right-radius: 100px;
       }
       .about-img-upper{
-        width: 492px;
-        height: 497px;
+        width: 400px;
+        height: 480px;
         position: absolute;
-        top: 260px;
+        top: 140px;
         left: 0px;
         object-fit: cover;
         border-top-left-radius: 100px;
@@ -215,22 +228,22 @@
 
 //contact-us css start
 .contact-us{
-  background-image: url(/img/contact-us-bg.png);
+  background-image: url(../img/contact-us-bg.png);
   .contact-wrap{
     p{
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 700;
-      // width: 74%;
       padding: 0 160px 0 160px;
     }
     .card{
       background: none;
-      img{padding: 58px}
-      .card-body{margin-top: -44px;}
+      margin-top: -50px;
+      img{padding: 120px}
+      .card-body{margin-top: -94px;
       h3{font-weight: 800;}
       a{font-weight: 600; font-size: 16px;}
 
-    }
+    }}
   }
 }
 //contact-us css end
@@ -249,8 +262,8 @@
     }
   }
 
-  .carousel-control-prev{margin-left: -110px;}
-  .carousel-control-next{margin-right: -110px;}
+  .carousel-control-prev{margin-left: -90px;}
+  .carousel-control-next{margin-right: -90px;}
 }
 //reiew css end
 
@@ -258,24 +271,676 @@
 .footer{
   .footer-wrap{
     img{width: 200px; height: 200px;}
-    h2{margin-top: 140px;}
-    .social{color: $primary-color; font-size: 50px;}
+    h2{margin-top: 140px; font-size: 27px;}
+    .social{color: $primary-color; font-size: 30px;}
     // .copyright{}
   }
 }
 //footer css end
 
+// media start
+@media (max-width: 1200px) {
+  .hero-area{
+    .row{height: 700px ;
 
+    .hero-txt{
+      h1{
+        font-size: 62px;
+      }
+      p{font-size: 17px;}
+  }
+  .hero-img{
+    .hero-main-img{
+      width: 420px;
+      height: 600px;
+      margin-top: 40px;
+    }
+    .hero-img1{
+      top: 7%;
+      right: -7%;
+      width: 300px;
+      height: 300px;
+    }
+    .hero-img2{
+      bottom: 8%;
+      left: -26%;
+      width: 360px;
+      height: 360px;
+    }
+    .menu-btn{
+      position: absolute;
+      bottom: 20%;
+      right: 4%;
+      width: 160px;
+      height: 160px;
+      border-top-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
+  }}
+  
+}
 
+.our-menu{
+  .menu-wrap{
+    .card{
+      img{padding: 36px;}
+      .card-body{
+        h5{font-size: 18px;}
+        h2{
+          font-size: 40px;
+        }
+        .btn{margin-top: 8px;}
+      }
+    }
+  }
+}
 
+.about-us{
+  height: 760px;
+  .about-wrap{
+    .about-txt{
+      margin-top: 140px;
+      h2{font-size: 38px;  }
+      h3{font-size: 18px; }
+      p{font-size: 18px; }
+    }
+    .about-img{
+      .about-img-lower{
+        width: 350px;
+        height: 430px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+      }
+      .about-img-upper{
+        width: 310px;
+        height: 390px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+      }
+    }
+  }
+}
 
+.contact-us{
+  .contact-wrap{
+    .row{margin-top: -25px;}
+    p{
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0 160px 0 160px;
+    }
+    .card{
+      margin-top: 0px;
 
+      img{padding: 78px}
+      .card-body{margin-top: -64px;}
+    }
+  }
+}
 
+.review{
+  .review-wrap{
+    height: 400px;
+    .carousel-item{
+      padding: 0 100px 0 100px;
+      img{width: 60px}
+      h5{font-size: 25px; }
+      p{font-size: 14px; }
+    }
+  }
+  .carousel-control-prev{margin-left: -60px;}
+  .carousel-control-next{margin-right: -60px;}
+}
 
+}
 
+@media (max-width: 992px) {
+  .hero-area{
+    .row{height: 480px ;
+    .hero-txt{
+      width: 100% !important;
+      .card-img-overlay{margin-top: 60px !important;
+      h1{
+        font-size: 48px;
+      }
+      h3{font-size: 18px; }
+      p{font-size: 14px;}
+  }}
+  .hero-img{
+    .hero-main-img{
+      width: 280px;
+      height: 400px;
+      margin-top: 30px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    .hero-img1{
+      top: 4%;
+      right: -12%;
+      width: 220px;
+      height: 220px;
+    }
+    .hero-img2{
+      bottom: 9%;
+      left: -20%;
+      width: 260px;
+      height: 260px;
+    }
+    .menu-btn{
+      bottom: 19%;
+      right: -2%;
+      width: 100px;
+      height: 100px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      
+    }
+  }}
+  
+}
 
+.our-menu{
+  .menu-wrap{
+    .card{
+      img{padding: 18px;}
+      .card-body{
+        margin-top: -10px;
+        h5{font-size: 16px;}
+        h2{
+          font-size: 35px;
+        }
+        .btn{margin-top: 8px;}
+      }
+    }
+  }
+}
 
+.about-us{
+  height: 600px;
+  .about-wrap{
+    .about-txt{
+      margin-top: 150px;
+      h2{font-size: 28px;  }
+      h3{font-size: 18px; }
+      p{font-size: 15px; }
+    }
+    .about-img{
+      .about-img-lower{
+        width: 270px;
+        height: 370px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      .about-img-upper{
+        width: 220px;
+        height: 320px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
+  }
+}
 
+.contact-us{
+  .contact-wrap{
+    .row{margin-top: -45px;}
+    p{
+      font-size: 14px;
+      padding: 0 110px 0 110px;
+    }
+    .card{
+      margin-top: 20px;
+      img{padding: 60px}
+      h3{font-size: 20px;}
+      a{font-size: 8px ;}
+      .card-body{margin-top: -54px;}
+    }
+  }
+}
+
+.review{
+  .review-wrap{
+    height: 360px;
+    .carousel-item{
+      padding: 0 80px 0 80px;
+      h5{font-size: 18px; }
+      p{font-size: 12px; }
+      img{width: 50px}
+      .reviews{font-size: 12px;}
+    }
+  }
+  .carousel-control-prev{margin-left: -60px;}
+  .carousel-control-next{margin-right: -60px;}
+}
+
+.footer{
+  padding-bottom: 70px;
+  .footer-wrap{
+    img{width: 140px; height: 140px;}
+    h2{margin-top: 90px; font-size: 20px;}
+    .social{color: $primary-color; font-size: 22px;}
+    // .copyright{}
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .hero-area{
+    .row{height: 720px ;
+    .hero-txt{
+      // width: 100% !important;
+      img{margin-top: -190px;}
+      .card-img-overlay{
+        margin-top: -160px !important;
+      h1{
+        font-size: 70px;
+      }
+      h3{font-size: 24px; }
+      p{font-size: 16px;}
+  }}
+  .hero-img{
+    margin-top: -480px;
+    .hero-main-img{
+      // width: 280px;
+      // height: 400px;
+      // // margin-top: 30px;
+      // border-top-left-radius: 50px;
+      // border-bottom-right-radius: 50px;
+      margin-left: 120px;
+    }
+    .hero-img1{
+      top: 8%;
+      right: 0%;
+      // width: 220px;
+      // height: 220px;
+    }
+    .hero-img2{
+      bottom: 10%;
+      left: 0%;
+      // width: 260px;
+      // height: 260px;
+    }
+    .menu-btn{
+      bottom: 19%;
+      right: 15%;
+      // width: 100px;
+      // height: 100px;
+      // border-top-right-radius: 30px;
+      // border-bottom-left-radius: 30px;
+      
+    }
+  }}
+  
+}
+
+.our-menu{
+  .menu-wrap{
+    .card{
+      img{padding: 14px;}
+      .card-body{
+        // margin-top: -10px;
+        h5{font-size: 14px;}
+        h2{
+          font-size: 25px;
+        }
+        .btn{
+          // margin-top: 8px;
+          // font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.about-us{
+  height: 500px;
+  .about-wrap{
+    .about-txt{
+      margin-top: 100px;
+      h2{font-size: 20px;  }
+      h3{font-size: 13px; }
+      p{font-size: 14px; }
+    }
+    .about-img{
+      .about-img-lower{
+        width: 180px;
+        height: 280px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .about-img-upper{
+        width: 130px;
+        height: 230px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+    }
+  }
+}
+
+.contact-us{
+  .contact-wrap{
+    .row{margin-top: -25px;}
+    p{
+      font-size: 12px;
+      padding: 0 90px 0 90px;
+    }
+    .card{
+      // margin-top: 20px;
+      img{padding: 40px}
+      h3{font-size: 16px;}
+      a{font-size: 12px;}
+      .card-body{margin-top: -34px; padding: 0px}
+    }
+  }
+}
+
+.review{
+  .review-wrap{
+    height: 360px;
+    .carousel-item{
+      padding: 0 80px 0 80px;
+      h5{font-size: 18px; }
+      p{font-size: 12px; }
+      img{width: 50px}
+      .reviews{font-size: 12px;}
+    }
+  }
+  .carousel-control-prev{margin-left: -60px;}
+  .carousel-control-next{margin-right: -60px;}
+}
+
+.footer{
+  padding-bottom: 70px;
+  .footer-wrap{
+    img{width: 140px; height: 140px;}
+    h2{margin-top: 90px; font-size: 20px;}
+    .social{color: $primary-color; font-size: 22px;}
+    // .copyright{}
+  }
+}
+}
+
+@media (max-width: 576px) {
+  .hero-area{
+    .row{height: 720px ;
+    .hero-txt{
+      // width: 100% !important;
+      img{margin-top: -330px ;}
+      .card-img-overlay{
+        margin-top: -290px !important;
+      h1{
+        font-size: 52px;
+      }
+      h3{font-size: 20px; }
+      p{font-size: 16px;}
+  }}
+  .hero-img{
+    margin-top: -480px;
+    .hero-main-img{
+      // width: 280px;
+      // height: 400px;
+      // // margin-top: 30px;
+      // border-top-left-radius: 50px;
+      // border-bottom-right-radius: 50px;
+      margin-left: 70px;
+    }
+    .hero-img1{
+      top: 8%;
+      right: -6%;
+      // width: 220px;
+      // height: 220px;
+    }
+    .hero-img2{
+      bottom: 10%;
+      left: 0%;
+      // width: 260px;
+      // height: 260px;
+    }
+    .menu-btn{
+      bottom: 19%;
+      right: 5%;
+      // width: 100px;
+      // height: 100px;
+      // border-top-right-radius: 30px;
+      // border-bottom-left-radius: 30px;
+      
+    }
+  }}
+  
+}
+
+.our-menu{
+  .menu-wrap{
+    .card{
+      img{padding: 56px;}
+      .card-body{
+        margin-top: -50px;
+        h5{font-size: 14px;}
+        h2{
+          font-size: 25px;
+        }
+        .btn{
+          // margin-top: 8px;
+          // font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.about-us{
+  height: 660px;
+  .about-wrap{
+    .about-txt{
+      margin-top: 30px;
+      text-align: center;
+      h2{font-size: 20px;  }
+      h3{font-size: 13px; }
+      p{font-size: 14px; }
+    }
+    .about-img{
+      .about-img-lower{
+        width: 220px;
+        height: 300px;
+        margin-right: 50px;
+        margin-top: 20px;
+        // border-top-left-radius: 30px;
+        // border-bottom-right-radius: 30px;
+      }
+      .about-img-upper{
+        width: 180px;
+        height: 270px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-left: 70px;
+        margin-top: -50px;
+      }
+    }
+  }
+}
+
+.contact-us{
+  .contact-wrap{
+    
+    p{
+      font-size: 12px;
+      padding: 0 90px 0 90px;
+      margin-bottom: 20px;
+    }
+    .card{
+      margin-top: -100px;
+      img{padding: 130px}
+      h3{font-size: 16px;}
+      a{font-size: 12px;}
+      .card-body{margin-top: -110px; padding: 0px}
+    }
+  }
+}
+
+.review{
+  .review-wrap{
+    height: 440px;
+    .carousel-item{
+      padding: 0 80px 0 80px;
+      h5{font-size: 18px; }
+      p{font-size: 12px; }
+      img{width: 50px}
+      .reviews{font-size: 12px;}
+    }
+  }
+  .carousel-control-prev{margin-left: 0px;}
+  .carousel-control-next{margin-right: 0px;}
+}
+
+.footer{
+  padding-bottom: 70px;
+  .footer-wrap{
+    img{width: 140px; height: 140px;}
+    h2{margin-top: 90px; font-size: 20px;}
+    .social{color: $primary-color; font-size: 22px;}
+    // .copyright{}
+  }
+}
+}
+
+@media (max-width: 400px) {
+  .hero-area{
+    .row{
+      height: 680px ;
+    .hero-txt{
+      .card-img-overlay{
+        margin-top: -310px !important;
+  }}
+  .hero-img{
+    margin-top: -480px;
+    .hero-main-img{
+      // width: 280px;
+      // height: 400px;
+      // // margin-top: 30px;
+      // border-top-left-radius: 50px;
+      // border-bottom-right-radius: 50px;
+      margin-left: 60px;
+    }
+    .hero-img1{
+      top: 8%;
+      right: -8%;
+      // width: 220px;
+      // height: 220px;
+    }
+    .hero-img2{
+      bottom: 10%;
+      left: 0%;
+      // width: 260px;
+      // height: 260px;
+    }
+    .menu-btn{
+      bottom: 19%;
+      right: 2%;
+      // width: 100px;
+      // height: 100px;
+      // border-top-right-radius: 30px;
+      // border-bottom-left-radius: 30px;
+      
+    }
+  }}
+  
+}
+
+.our-menu{
+  .menu-wrap{
+    .card{
+      margin-top: -20px;
+      img{padding: 56px;}
+      .card-body{
+        margin-top: -50px;
+        h5{font-size: 14px;}
+        h2{
+          font-size: 25px;
+        }
+        .btn{
+          // margin-top: 8px;
+          // font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.about-us{
+  height: 660px;
+  .about-wrap{
+    // .about-txt{
+    //   margin-top: 30px;
+    //   text-align: center;
+    //   h2{font-size: 20px;  }
+    //   h3{font-size: 13px; }
+    //   p{font-size: 14px; }
+    // }
+    .about-img{
+      .about-img-lower{
+        width: 220px;
+        height: 300px;
+        margin-right: 30px;
+        margin-top: 30px;
+        // border-top-left-radius: 30px;
+        // border-bottom-right-radius: 30px;
+      }
+      .about-img-upper{
+        // width: 180px;
+        height: 270px;
+        // border-top-left-radius: 30px;
+        // border-bottom-right-radius: 30px;
+        margin-left: 40px;
+        // margin-top: -50px;
+      }
+    }
+  }
+}
+
+.contact-us{
+  .contact-wrap{
+    
+    p{
+      // font-size: 12px;
+      padding: 0 10px 0 10px;
+      // margin-bottom: 20px;
+    }
+    // .card{
+    //   margin-top: -100px;
+    //   img{padding: 130px}
+    //   h3{font-size: 16px;}
+    //   a{font-size: 12px;}
+    //   .card-body{margin-top: -110px; padding: 0px}
+    // }
+  }
+}
+
+.review{
+  .review-wrap{
+    height: 400px;
+    .carousel-item{
+      padding: 0 30px 0 30px;
+      h5{font-size: 18px; }
+      // p{font-size: 12px; }
+      img{width: 40px}
+      // .reviews{font-size: 12px;}
+    }
+  }
+  .carousel-control-prev{margin-left: -10px;}
+  .carousel-control-next{margin-right: -10px;}
+}
+
+.footer{
+  padding-bottom: 70px;
+  .footer-wrap{
+    img{width: 140px; height: 140px;}
+    h2{margin-top: 90px; font-size: 20px;}
+    .social{color: $primary-color; font-size: 22px;}
+    // .copyright{}
+  }
+}
+}
 
 
 
