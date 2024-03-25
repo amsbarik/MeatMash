@@ -171,7 +171,7 @@
 
 //our menu css start
 .our-menu{
-  background-image: url(../img/our-menu-bg.svg);
+  background-image: url(../img/menu-bg.png);
   .menu-wrap{
     .card{
       background: none;
@@ -255,6 +255,7 @@
 //reiew css start
 .review{
   background-color: $primary-color;
+  background-image: url(../img/review-bg.png);
   .review-wrap{
     height: 496px;
     color: $tertiary-color;
