@@ -19,7 +19,7 @@
     <!-- Navbar top start-->
     <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html" ><img src="img/logo.svg" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <a class="navbar-brand" href="index.html" ><img src="img/Logo.svg" class="object-fit-cover brand-logo" style="height: 60px;" alt="logo"></a>
         <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,21 +30,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <!-- <div class="search ">
-              <form action="" role="search">
-                <div class="input-group ">
-                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
-                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-              </form>
-            </div> -->
-            <ul class="navbar-nav justify-content-center  flex-grow-1 pe-3">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
-              <li class="nav-item"><a class="nav-link " href="#">MENU</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">EN</a></li>
-              <!-- <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li> -->
+            <ul class="navbar-nav justify-content-center navigation  flex-grow-1 pe-3">
+              <li data-bs-dismiss="offcanvas" class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
+              <li data-bs-dismiss="offcanvas" class="nav-item"><a class="nav-link " href="#our-menu">MENU</a></li>
+              <li data-bs-dismiss="offcanvas" class="nav-item"><a class="nav-link" href="#about-us">ABOUT US</a></li>
+              <li data-bs-dismiss="offcanvas" class="nav-item"><a class="nav-link" href="#contact-us">CONTACT US</a></li>
+              <li data-bs-dismiss="offcanvas" class="nav-item"><a class="nav-link" href="#">EN</a></li>
               
             </ul>
           </div>
@@ -64,13 +55,13 @@
               <a class="nav-link nav-link-sm text-center active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link nav-link-sm" href="#"><i class="fa-solid fa-mug-hot"></i><span class="d-block">Menu</span></a>
+              <a class="nav-link nav-link-sm" href="#our-menu"><i class="fa-solid fa-mug-hot"></i><span class="d-block">Menu</span></a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link nav-link-sm " href="#"><i class="fa-solid fa-eject"></i><span class="d-block">About</span></a>
+              <a class="nav-link nav-link-sm " href="#about-us"><i class="fa-solid fa-eject"></i><span class="d-block">About</span></a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link nav-link-sm " href="#"><i class="fa-solid fa-address-card"></i><span class="d-block">Contact</span></a>
+              <a class="nav-link nav-link-sm " href="#contact-us"><i class="fa-solid fa-address-card"></i><span class="d-block">Contact</span></a>
             </li>
             <li class="nav-item text-center">
               <a class="nav-link nav-link-sm "  href="#"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
@@ -81,43 +72,39 @@
     </nav>
     <!-- nav bottom end  -->
 
-    <!--user Sidebar start-->
-    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
-        <div class="position-sticky">
-            <div class="list-group list-group-flush  mt-4">
-                <div>
-                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
-                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
-                      <h5 class="text-center mt-3">Mr Jhon</h5>
-                      <p class="text-center"><small>hello@gmail.com</small></p>
-                      
-                    </div>
-                  </div>
-                  <hr class="text-light m-0 mt-4 p-0">
-
-                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
-                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
-                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
-                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
-                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
-            </div>
-        </div>
-    </nav> -->
-    
-    <!--user Sidebar end-->
   </header>
+  
+  
+  
+  
   <!--Main Navigation end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!--start main-->
   <main>
     <!-- Hero Area start  -->
-    <section class="hero-area" style="margin-top: 90px;" >
+    <section id="hero-area" class="hero-area" style="margin-top: 90px;">
       <div class="container ">
-        <div class="hero-wrap " >
+        <div class="hero-wrap">
           <div class="row row-cols-1 row-cols-md-2">
             <div class="col d-flex align-items-center" style="height: 100%;">
               <div class="card hero-txt border-0" style="width: 94%; margin-left: -40px;">
-                <img src="img/Illustration.svg" class="card-img" alt="...">
+                <img src="img/hero-bg.png" class="card-img" alt="...">
+                <!-- <img src="img/Illustration.svg" class="card-img" alt="..."> -->
                 <div class="card-img-overlay" style="margin-top: 110px; margin-left: 40px;">
                   <h3 class="card-title text-uppercase">WELCOME TO</h3>
                   <h1 class="text-uppercase heading-style">MeatMash</h1>
@@ -142,7 +129,7 @@
       </div>
     </section>
     <!-- our menu start  -->
-    <section class="our-menu py-4 py-lg-5">
+    <section id="our-menu" style="padding-top: 100px;" class="our-menu pb-4 pb-lg-5">
       <div class="container">
         <div class="menu-wrap">
           <h1 class="heading-style text-center">our menu</h1>
@@ -185,7 +172,7 @@
     <!-- our menu end -->
 
     <!-- about us start  -->
-    <section class="about-us py-4 py-lg-5">
+    <section id="about-us" style="padding-top: 100px;" class="about-us pb-4 pb-lg-5">
       <div class="container">
         <div class="about-wrap">
           <h1 class="heading-style text-uppercase text-white text-center">about us</h1>
@@ -210,7 +197,7 @@
     <!-- about us end -->
 
     <!-- contact us start -->
-    <section class="contact-us pt-5">
+    <section id="contact-us" style="padding-top: 100px;" class="contact-us ">
       <div class="container">
         <div class="contact-wrap">
           <h1 class="heading-style text-center text-uppercase">contact us</h1>
@@ -252,9 +239,8 @@
     </section>
     <!-- contact us end -->
 
-
     <!-- review start  -->
-    <section class="review">
+    <section id="review"  class="review">
       <div class="container">
         <div class="review-wrap">
           <div id="review-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -288,9 +274,10 @@
         </div>
       </div>
     </section>
-
-
     <!-- review end -->
+
+
+    <!--  -->
 
     <!-- footer start  -->
     <footer class="footer pb-lg-3 mt-lg-4">

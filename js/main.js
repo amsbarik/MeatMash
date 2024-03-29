@@ -22,4 +22,3 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-
